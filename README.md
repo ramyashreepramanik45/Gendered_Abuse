@@ -68,7 +68,8 @@ This repository contains code and instructions for detecting gendered abuse acro
 ---
 
 ## 📁 Dataset Directory Structure
-.
+
+```
 ├── Additional_Data
 │   ├── HASOC_data
 │   │   ├── english_dataset.tsv
@@ -105,3 +106,5 @@ This repository contains code and instructions for detecting gendered abuse acro
         ├── train_ta_l2.csv
         └── train_ta_l3.csv
 
+
+```
