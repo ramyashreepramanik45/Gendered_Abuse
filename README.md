@@ -4,7 +4,7 @@ This repository contains code and instructions for detecting gendered abuse acro
 
 ---
 
-## 📂 Baseline_1 Overview
+## Baseline_1 Overview
 
 ### 🔹 Subtask 1: Classification using Given Dataset
 
@@ -12,12 +12,12 @@ This repository contains code and instructions for detecting gendered abuse acro
 - Dataset used: **ULI Dataset (label_1 only)**
 - Files are available under `uli_dataset-main/training/` and `uli_dataset-main/testing/`.
 
-#### 📊 Training Files:
+#### Training Files:
 - `train_en_l1.csv`
 - `train_hi_l1.csv`
 - `train_ta_l1.csv`
 
-#### 📈 Testing Files:
+#### Testing Files:
 - `test_en_l1.csv`
 - `test_hi_l1.csv`
 - `test_ta_l1.csv`
@@ -30,21 +30,26 @@ This repository contains code and instructions for detecting gendered abuse acro
 
 - Uses **external datasets** + **ULI dataset** for fine-tuning.
 
-#### 🗃 External Datasets (Located in `Additional_Data/`):
-- **MACD Dataset** (Hindi & Tamil):
-  - `MACD_data/hindi_data/hindi_train.csv`
-  - `MACD_data/hindi_data/hindi_val.csv`
-  - `MACD_data/tamil_data/tamil_train.csv`
-  - `MACD_data/tamil_data/tamil_val.csv`
+####  External Datasets (Located in `Additional_Data/`):
 
-- **HASOC Dataset** (English):
-  - `HASOC_data/english_dataset.tsv`
-  - `hasoc2019_en_test-2919.tsv`
+- **MACD Dataset** (Hindi & Tamil):  
+  [MACD GitHub Repo – dataset_80_10_10](https://github.com/ShareChatAI/MACD/tree/main/dataset_80_10_10)
 
-#### 🔁 Fine-tuning Data (ULI Dataset):
+- **HASOC Dataset** (English):  
+  [HASOC 2019 Dataset](https://hasocfire.github.io/hasoc/2019/dataset.html)
+
+##### Local File Structure:
+- `MACD_data/hindi_data/hindi_train.csv`
+- `MACD_data/hindi_data/hindi_val.csv`
+- `MACD_data/tamil_data/tamil_train.csv`
+- `MACD_data/tamil_data/tamil_val.csv`
+- `HASOC_data/english_dataset.tsv`
+- `HASOC_data/hasoc2019_en_test-2919.tsv`
+
+####  Fine-tuning Data (ULI Dataset):
 - Use relevant files from `uli_dataset-main/training/` for final training.
 
-> ✏️ Modify the paths inside the subtask_2 `.ipynb` notebooks before running.
+>  Modify the paths inside the subtask_2 `.ipynb` notebooks before running.
 
 ---
 
@@ -52,7 +57,7 @@ This repository contains code and instructions for detecting gendered abuse acro
 
 - Multi-label classification using `label_1` and `label_3` from the **ULI Dataset**.
 
-#### 🧾 Files Used:
+#### Files Used:
 - **Training:**
   - `train_en_l1.csv`, `train_en_l3.csv`
   - `train_hi_l1.csv`, `train_hi_l3.csv`
@@ -63,11 +68,14 @@ This repository contains code and instructions for detecting gendered abuse acro
   - `test_hi_l1.csv`, `test_hi_l3.csv`
   - `test_ta_l1.csv`, `test_ta_l3.csv`
 
-> ✏️ Ensure to update paths in the `subtask_3/` notebooks to use correct files.
+>  Ensure to update paths in the `subtask_3/` notebooks to use correct files.
 
 ---
 
-## 📁 Dataset Directory Structure
+
+
+
+##  Dataset Directory Structure
 
 ```
 ├── Additional_Data
