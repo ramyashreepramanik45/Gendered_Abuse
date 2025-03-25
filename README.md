@@ -1,39 +1,59 @@
+# Gendered Abuse Detection for Indic Languages
 
-This Readme contains instructions for running the codes for Gendered abuse for Indic Languages.
+This repository contains code and instructions for detecting gendered abuse across Indic languages: Hindi, Tamil, and English. It supports three subtasks as defined in the shared task guidelines.
 
+---
 
-BaseLine_1
+## Baseline_1 Overview
 
-subtask_1 folder contains the ipynb files for subtask_1.
+### 🔹 Subtask 1: Classification using Given Dataset
+- Code files are available in the `subtask_1/` folder.
+- Data is available in the `dataset/` folder.
+- Dataset used: **ULI Dataset**
+- Only `label_1` is used for this task.
 
-All the relevant datas are availble in dataset folder.
+####  Training Data
+- Tamil: `train_ta_l1.csv`
+- English: `train_en_l1.csv`
+- Hindi: `train_hi_l1.csv`
 
-For task_1 we have used the given uli_dataset.
+####  Testing Data
+- Tamil: `test_ta_l1.csv`
+- English: `test_en_l1.csv`
+- Hindi: `test_hi_l1.csv`
 
-Use only label_1 data. 
+>  **Note:** Make sure to change the file paths in the respective `.ipynb` files before running.
 
-training data:
-train_ta_l1.csv for tamil
-train_en_l1.csv for english
-train_hi_l1.csv for hindi
+---
 
+### 🔹 Subtask 2: Transfer Learning with External Data
 
-testing data:
-test_ta_l1.csv for tamil
-test_en_l1.csv for english
-test_hi_l1.csv for hindi
+- External datasets are used along with the ULI dataset for training.
+  
+#### 🗃 External Datasets:
+- **MACD (Hindi & Tamil):** [MACD GitHub Repo](https://github.com/ShareChatAI/MACD/tree/main/dataset_80_10_10)
+- **HASOC (English):** [HASOC 2019 Dataset](https://hasocfire.github.io/hasoc/2019/dataset.html)
 
-Change the file paths in the respective ipynb and run the code.
+- Finetuning is done using the given **ULI dataset**.
+- All required data is available inside the `dataset/` folder.
 
+> **Note:** Change the file paths in the `.ipynb` notebooks accordingly before running.
 
+---
 
-For task_2 we have used the given dataset.
+### 🔹 Subtask 3: Multitask Learning
 
-External dataset for transfer Learning:
+- Uses the given **ULI dataset**.
+- Task setup involves multi-task classification on:
+  - `label_1` – Gendered abuse
+  - `label_3` – Explicit/Aggressive content
 
-MACD dataset for hindi and tamil,(https://github.com/ShareChatAI/MACD/tree/main/dataset_80_10_10)
-HASOC for english,(https://hasocfire.github.io/hasoc/2019/dataset.html)
+#### 🗃 Files Used:
+- Training and testing data for `label_1` and `label_3` from ULI dataset
 
-The required datas are available in dataset folder.
+>  **Note:** Modify file paths in the respective `.ipynb` files and run.
 
+---
+
+## 📁 Folder Structure
 
