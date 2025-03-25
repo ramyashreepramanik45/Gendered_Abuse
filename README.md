@@ -4,56 +4,104 @@ This repository contains code and instructions for detecting gendered abuse acro
 
 ---
 
-## Baseline_1 Overview
+## 📂 Baseline_1 Overview
 
 ### 🔹 Subtask 1: Classification using Given Dataset
-- Code files are available in the `subtask_1/` folder.
-- Data is available in the `dataset/` folder.
-- Dataset used: **ULI Dataset**
-- Only `label_1` is used for this task.
 
-####  Training Data
-- Tamil: `train_ta_l1.csv`
-- English: `train_en_l1.csv`
-- Hindi: `train_hi_l1.csv`
+- Code is located in the `subtask_1/` folder.
+- Dataset used: **ULI Dataset (label_1 only)**
+- Files are available under `uli_dataset-main/training/` and `uli_dataset-main/testing/`.
 
-####  Testing Data
-- Tamil: `test_ta_l1.csv`
-- English: `test_en_l1.csv`
-- Hindi: `test_hi_l1.csv`
+#### 📊 Training Files:
+- `train_en_l1.csv`
+- `train_hi_l1.csv`
+- `train_ta_l1.csv`
 
->  **Note:** Make sure to change the file paths in the respective `.ipynb` files before running.
+#### 📈 Testing Files:
+- `test_en_l1.csv`
+- `test_hi_l1.csv`
+- `test_ta_l1.csv`
+
+> ✏️ **Note:** Update file paths in the `.ipynb` notebooks to match the dataset structure before running.
 
 ---
 
 ### 🔹 Subtask 2: Transfer Learning with External Data
 
-- External datasets are used along with the ULI dataset for training.
-  
-#### 🗃 External Datasets:
-- **MACD (Hindi & Tamil):** [MACD GitHub Repo](https://github.com/ShareChatAI/MACD/tree/main/dataset_80_10_10)
-- **HASOC (English):** [HASOC 2019 Dataset](https://hasocfire.github.io/hasoc/2019/dataset.html)
+- Uses **external datasets** + **ULI dataset** for fine-tuning.
 
-- Finetuning is done using the given **ULI dataset**.
-- All required data is available inside the `dataset/` folder.
+#### 🗃 External Datasets (Located in `Additional_Data/`):
+- **MACD Dataset** (Hindi & Tamil):
+  - `MACD_data/hindi_data/hindi_train.csv`
+  - `MACD_data/hindi_data/hindi_val.csv`
+  - `MACD_data/tamil_data/tamil_train.csv`
+  - `MACD_data/tamil_data/tamil_val.csv`
 
-> **Note:** Change the file paths in the `.ipynb` notebooks accordingly before running.
+- **HASOC Dataset** (English):
+  - `HASOC_data/english_dataset.tsv`
+  - `hasoc2019_en_test-2919.tsv`
+
+#### 🔁 Fine-tuning Data (ULI Dataset):
+- Use relevant files from `uli_dataset-main/training/` for final training.
+
+> ✏️ Modify the paths inside the subtask_2 `.ipynb` notebooks before running.
 
 ---
 
 ### 🔹 Subtask 3: Multitask Learning
 
-- Uses the given **ULI dataset**.
-- Task setup involves multi-task classification on:
-  - `label_1` – Gendered abuse
-  - `label_3` – Explicit/Aggressive content
+- Multi-label classification using `label_1` and `label_3` from the **ULI Dataset**.
 
-#### 🗃 Files Used:
-- Training and testing data for `label_1` and `label_3` from ULI dataset
+#### 🧾 Files Used:
+- **Training:**
+  - `train_en_l1.csv`, `train_en_l3.csv`
+  - `train_hi_l1.csv`, `train_hi_l3.csv`
+  - `train_ta_l1.csv`, `train_ta_l3.csv`
+  
+- **Testing:**
+  - `test_en_l1.csv`, `test_en_l3.csv`
+  - `test_hi_l1.csv`, `test_hi_l3.csv`
+  - `test_ta_l1.csv`, `test_ta_l3.csv`
 
->  **Note:** Modify file paths in the respective `.ipynb` files and run.
+> ✏️ Ensure to update paths in the `subtask_3/` notebooks to use correct files.
 
 ---
 
-## 📁 Folder Structure
+## 📁 Dataset Directory Structure
+.
+├── Additional_Data
+│   ├── HASOC_data
+│   │   ├── english_dataset.tsv
+│   │   └── hasoc2019_en_test-2919.tsv
+│   └── MACD_data
+│       ├── hindi_data
+│       │   ├── hindi_train.csv
+│       │   └── hindi_val.csv
+│       └── tamil_data
+│           ├── tamil_train.csv
+│           └── tamil_val.csv
+├── structure.txt
+└── uli_dataset-main
+    ├── LICENSE
+    ├── README.md
+    ├── testing
+    │   ├── test_en_l1.csv
+    │   ├── test_en_l2.csv
+    │   ├── test_en_l3.csv
+    │   ├── test_hi_l1.csv
+    │   ├── test_hi_l2.csv
+    │   ├── test_hi_l3.csv
+    │   ├── test_ta_l1.csv
+    │   ├── test_ta_l2.csv
+    │   └── test_ta_l3.csv
+    └── training
+        ├── train_en_l1.csv
+        ├── train_en_l2.csv
+        ├── train_en_l3.csv
+        ├── train_hi_l1.csv
+        ├── train_hi_l2.csv
+        ├── train_hi_l3.csv
+        ├── train_ta_l1.csv
+        ├── train_ta_l2.csv
+        └── train_ta_l3.csv
 
