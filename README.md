@@ -22,7 +22,7 @@ This repository contains code and instructions for detecting gendered abuse acro
 - `test_hi_l1.csv`
 - `test_ta_l1.csv`
 
-> ✏️ **Note:** Update file paths in the `.ipynb` notebooks to match the dataset structure before running.
+> **Note:** Update file paths in the `.ipynb` notebooks to match the dataset structure before running.
 
 ---
 
