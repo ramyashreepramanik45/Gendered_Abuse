@@ -30,7 +30,7 @@ This repository contains code and instructions for detecting gendered abuse acro
 ### 🔹 Subtask 2: Transfer Learning with External Data
 
 - Uses **external datasets** + **HurtLex** + **ULI dataset** for fine-tuning.
-
+- Code is located in the `final_codes/TASK2` folder.
 ####  External Datasets (Located in `Additional_Data/`):
 
 - **MACD Dataset** (Hindi & Tamil):  
@@ -63,7 +63,7 @@ This repository contains code and instructions for detecting gendered abuse acro
 
 - Multi-label classification using `label_1` and `label_3` from the **ULI Dataset**.
 - Embedding Used: **Glove for english and fastext for tamil,hindi**
-
+- Code is located in the `final_codes/TASK3` folder.
 #### Files Used:
 - **Training:**
   - `train_en_l1.csv`, `train_en_l3.csv`
@@ -91,41 +91,60 @@ This repository contains code and instructions for detecting gendered abuse acro
 ##  Dataset Directory Structure
 
 ```
-├── Additional_Data
-│   ├── HASOC_data
-│   │   ├── english_dataset.tsv
-│   │   └── hasoc2019_en_test-2919.tsv
-│   └── MACD_data
-│       ├── hindi_data
-│       │   ├── hindi_train.csv
-│       │   └── hindi_val.csv
-│       └── tamil_data
-│           ├── tamil_train.csv
-│           └── tamil_val.csv
-├── structure.txt
-└── uli_dataset-main
-    ├── LICENSE
-    ├── README.md
-    ├── testing
-    │   ├── test_en_l1.csv
-    │   ├── test_en_l2.csv
-    │   ├── test_en_l3.csv
-    │   ├── test_hi_l1.csv
-    │   ├── test_hi_l2.csv
-    │   ├── test_hi_l3.csv
-    │   ├── test_ta_l1.csv
-    │   ├── test_ta_l2.csv
-    │   └── test_ta_l3.csv
-    └── training
-        ├── train_en_l1.csv
-        ├── train_en_l2.csv
-        ├── train_en_l3.csv
-        ├── train_hi_l1.csv
-        ├── train_hi_l2.csv
-        ├── train_hi_l3.csv
-        ├── train_ta_l1.csv
-        ├── train_ta_l2.csv
-        └── train_ta_l3.csv
+├── baseline_1
+│   ├── subtask1
+│   │   ├── 1_combined.ipynb
+│   │   ├── 1_english.ipynb
+│   │   ├── 1_hindi.ipynb
+│   │   └── 1_tamil.ipynb
+│   ├── subtask2
+│   │   ├── combined_2.ipynb
+│   │   ├── eng_2.ipynb
+│   │   ├── hindi_2.ipynb
+│   │   └── tamil_2.ipynb
+│   └── subtask3
+│       ├── Combined_subtask3.ipynb
+│       ├── English_subtask3.ipynb
+│       ├── Hindi_subtask3.ipynb
+│       └── Tamil_subtask3.ipynb
+├── Baseline2
+│   ├── TASK1
+│   │   ├── task1-english-base2.ipynb
+│   │   ├── task1-hindi-cnn-bilstm.ipynb
+│   │   └── task1-tamil-cnn-bilstm.ipynb
+│   ├── TASK2
+│   │   ├── task2-eng-cnn-bilstm.ipynb
+│   │   ├── task2-hindi-cnn-bilstm.ipynb
+│   │   └── task2-tamil-cnn-bilstm.ipynb
+│   └── TASK3
+│       ├── task3_eng_lstm_cnn.ipynb
+│       ├── task3-hindi-cnn-bilstm.ipynb
+│       └── task3_tamil_lstm_cnn.ipynb
+├── dataset
+│   ├── Additional_Data
+│   │   ├── HASOC_data
+│   │   ├── Hurtlex
+│   │   └── MACD_data
+│   ├── structure.txt
+│   └── uli_dataset-main
+│       ├── LICENSE
+│       ├── README.md
+│       ├── testing
+│       └── training
+├── final_codes
+│   ├── TASK1
+│   │   ├── fusion
+│   │   ├── fusion_hurtlex
+│   │   └── hurtlex
+│   ├── TASK2
+│   │   ├── fusion-hurtlex-english-task2.ipynb
+│   │   ├── fusion-hurtlex-hindi-task2.ipynb
+│   │   └── fusion-task2-tamil.ipynb
+│   └── TASK3
+│       ├── tamil-fusion-task3.ipynb
+│       ├── task3-eng-fusion-hurtlex.ipynb
+│       └── task3-hindi-fusion-hurtlex.ipynb
+└── README.md
 
 
 ```
