@@ -98,7 +98,7 @@ This repository contains code and instructions for detecting gendered abuse acro
 
 ##  Note
 
-HurtLex LExicons are available only for Hindi and English and will be used only for those languages.
+HurtLex Lexicons are available only for Hindi and English and will be used only for those languages.
 
 ##  Directory Structure
 
