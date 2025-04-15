@@ -10,7 +10,7 @@ This repository contains code and instructions for detecting gendered abuse acro
 
 - Code is located in the `final_codes/TASK1/fusion_hurtlex/` folder.
 - Dataset used: **ULI Dataset (label_1 only) and Hurtlex data files**
-- Embedding Used: **Glove for english and fastext for tamil,hindi**
+- Embedding Used: **Glove** for english and **fastext** for tamil,hindi
 - Files are available under `uli_dataset-main/training/`,`uli_dataset-main/testing/` and `dataset/Additional_Data/Hurtlex`.
 
 #### Training Files:
@@ -40,7 +40,7 @@ This repository contains code and instructions for detecting gendered abuse acro
   [HASOC 2019 Dataset](https://hasocfire.github.io/hasoc/2019/dataset.html)
 
 
-- Embedding Used: **Glove for english and fastext for tamil,hindi**
+- Embedding Used: **Glove** for english and **fastext** for tamil,hindi
 
 ##### Local File Structure:
 - `MACD_data/hindi_data/hindi_train.csv`
@@ -61,8 +61,8 @@ This repository contains code and instructions for detecting gendered abuse acro
 
 ### 🔹 Subtask 3: Multitask Learning
 
-- Multi-label classification using `label_1` and `label_3` from the **ULI Dataset**.
-- Embedding Used: **Glove for english and fastext for tamil,hindi**
+- Multi-label classification using `label_1` and `label_3` from the **ULI Dataset** and **HurtLex Files**
+- Embedding Used: **Glove** for english and **fastext** for tamil,hindi
 - Code is located in the `final_codes/TASK3` folder.
 #### Files Used:
 - **Training:**
@@ -88,7 +88,7 @@ This repository contains code and instructions for detecting gendered abuse acro
 
 
 
-##  Dataset Directory Structure
+##  Directory Structure
 
 ```
 ├── baseline_1
