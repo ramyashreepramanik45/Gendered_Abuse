@@ -23,6 +23,10 @@ This repository contains code and instructions for detecting gendered abuse acro
 - `test_hi_l1.csv`
 - `test_ta_l1.csv`
 
+- **Hurtlex**
+  - `hurtlex_EN.tsv`
+  - `hurtlex_HI.tsv`
+
 > **Note:** Update file paths in the `.ipynb` notebooks to match the dataset structure before running.
 
 ---
@@ -75,6 +79,12 @@ This repository contains code and instructions for detecting gendered abuse acro
   - `test_hi_l1.csv`, `test_hi_l3.csv`
   - `test_ta_l1.csv`, `test_ta_l3.csv`
 
+
+- **Hurtlex**
+  - `hurtlex_EN.tsv`
+  - `hurtlex_HI.tsv`
+
+
 >  Ensure to update paths in the `subtask_3/` notebooks to use correct files.
 
 ---
@@ -86,7 +96,9 @@ This repository contains code and instructions for detecting gendered abuse acro
 - **HurtLex** (Hindi):  
   [Hurtlex Hindi](https://github.com/valeriobasile/hurtlex/tree/master/lexica/HI/1.0)
 
+##  Note
 
+HurtLex LExicons are available only for Hindi and English and will be used only for those languages.
 
 ##  Directory Structure
 
