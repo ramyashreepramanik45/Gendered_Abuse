@@ -4,7 +4,7 @@ This repository contains code and instructions for detecting gendered abuse acro
 
 ---
 
-## Baseline_1 Overview
+## Instructions to run Code
 
 ### 🔹 Subtask 1: Classification using Given Dataset
 
@@ -28,7 +28,7 @@ This repository contains code and instructions for detecting gendered abuse acro
 
 ### 🔹 Subtask 2: Transfer Learning with External Data
 
-- Uses **external datasets** + **ULI dataset** for fine-tuning.
+- Uses **external datasets** + **HurtLex** + **ULI dataset** for fine-tuning.
 
 ####  External Datasets (Located in `Additional_Data/`):
 
@@ -37,6 +37,8 @@ This repository contains code and instructions for detecting gendered abuse acro
 
 - **HASOC Dataset** (English):  
   [HASOC 2019 Dataset](https://hasocfire.github.io/hasoc/2019/dataset.html)
+
+
 
 ##### Local File Structure:
 - `MACD_data/hindi_data/hindi_train.csv`
@@ -71,7 +73,13 @@ This repository contains code and instructions for detecting gendered abuse acro
 >  Ensure to update paths in the `subtask_3/` notebooks to use correct files.
 
 ---
+### 🔹 Abuse Lexicon
 
+- **HurtLex** (English):  
+  [Hurtlex English](https://github.com/valeriobasile/hurtlex/tree/master/lexica/EN/1.0)
+
+- **HurtLex** (Hindi):  
+  [Hurtlex Hindi](https://github.com/valeriobasile/hurtlex/tree/master/lexica/HI/1.0)
 
 
 
