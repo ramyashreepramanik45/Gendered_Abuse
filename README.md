@@ -8,9 +8,10 @@ This repository contains code and instructions for detecting gendered abuse acro
 
 ### 🔹 Subtask 1: Classification using Given Dataset
 
-- Code is located in the `subtask_1/` folder.
-- Dataset used: **ULI Dataset (label_1 only)**
-- Files are available under `uli_dataset-main/training/` and `uli_dataset-main/testing/`.
+- Code is located in the `final_codes/TASK1/fusion_hurtlex/` folder.
+- Dataset used: **ULI Dataset (label_1 only) and Hurtlex data files**
+- Embedding Used: **Glove for english and fastext for tamil,hindi**
+- Files are available under `uli_dataset-main/training/`,`uli_dataset-main/testing/` and `dataset/Additional_Data/Hurtlex`.
 
 #### Training Files:
 - `train_en_l1.csv`
@@ -39,6 +40,7 @@ This repository contains code and instructions for detecting gendered abuse acro
   [HASOC 2019 Dataset](https://hasocfire.github.io/hasoc/2019/dataset.html)
 
 
+- Embedding Used: **Glove for english and fastext for tamil,hindi**
 
 ##### Local File Structure:
 - `MACD_data/hindi_data/hindi_train.csv`
@@ -47,6 +49,8 @@ This repository contains code and instructions for detecting gendered abuse acro
 - `MACD_data/tamil_data/tamil_val.csv`
 - `HASOC_data/english_dataset.tsv`
 - `HASOC_data/hasoc2019_en_test-2919.tsv`
+- `dataset/Additional_Data/Hurtlex/hurtlex_EN.tsv`
+- `dataset/Additional_Data/Hurtlex/hurtlex_HI.tsv`
 
 ####  Fine-tuning Data (ULI Dataset):
 - Use relevant files from `uli_dataset-main/training/` for final training.
@@ -58,6 +62,7 @@ This repository contains code and instructions for detecting gendered abuse acro
 ### 🔹 Subtask 3: Multitask Learning
 
 - Multi-label classification using `label_1` and `label_3` from the **ULI Dataset**.
+- Embedding Used: **Glove for english and fastext for tamil,hindi**
 
 #### Files Used:
 - **Training:**
